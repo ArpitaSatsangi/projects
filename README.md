@@ -1,4 +1,6 @@
-# Student-management-system-project
-written in c++
+# PROJECTS
+## Student-management-system-project
+written in c++ 
 
-1. using string arrays
+## Digital clock
+written in c 
