@@ -4,3 +4,6 @@ written in c++ using string arrays
 
 ## 2. Digital clock
 written in c 
+
+## 3. Supermarket billing system
+written in c++ (youtube: simplilearn)
