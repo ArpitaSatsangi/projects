@@ -347,7 +347,7 @@ void shopping :: receipt()
     fstream data;
     int arrc[100];//codes
     int arrq[100];//quantities
-    int choice;
+    char choice;
     int c=0;
     float amount=0.0;
     float discount=0.0;
@@ -384,29 +384,34 @@ void shopping :: receipt()
                 }
             }
             c++;
-            cout<<"\n\nDo you want to buy another product? if yes then press 1 else 0: ";
+            cout<<"\n\nDo you want to buy another product? if yes then press y else n: ";
             cin>>choice;
         }
-        while(choice==1);
+        while(choice=='y');
 
         cout<<"\n\n\t\t____________RECEIPT___________\n";
-        cout<<"\nProduct No \t Product Name \t Product Quantity \t Price \t Amount \t Amount with discount\n";
+        cout<<"\nProduct No   Product Name   Product Quantity   Price   Amount   Amount with discount  Total\n";
 
-        for(int j=0;j<c;j++)
-        {
+
+        for(int j=0;j<c;j++){
             data.open("database.txt", ios::in);
+
             data>>pcode>>pname>>price>>discount;
+            cout << "value of j " << j<< endl;
+            cout << "Value of pcode " << pcode <<endl;
             while(!data.eof())
             {
                 if(pcode==arrc[j])
                 {
                     amount=price*arrq[j];
-                    discount=amount-((amount*discount)/100.0);
+                    discount=amount-(amount*discount/100.0);
                     total=total+discount;
-                    cout<<pcode<<" \t "<<pname<<" \t "<<arrq[j]<<" \t "<<price<<" \t "<<amount<<" \t "<<discount<<"\t";
+                    cout<<endl<<pcode<<" \t "<<pname<<" \t "<<arrq[j]<<" \t "<<price<<" \t "<<amount<<" \t "<<discount<<" \t "<<total;
                 }
+
                 data>>pcode>>pname>>price>>discount;
             }
+            cout << "value of j " << j<< endl;
         }
         data.close();
     }
