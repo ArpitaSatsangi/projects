@@ -7,3 +7,6 @@ written in c
 
 ## 3. Supermarket billing system
 written in c++ (youtube: simplilearn)
+
+## 4. Thre cup monte
+wriiten in python(jupyter notebook)
