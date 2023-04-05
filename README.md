@@ -9,4 +9,7 @@ written in c
 written in c++ (youtube: simplilearn)
 
 ## 4. Three cup monte
-wriiten in python(jupyter notebook)
+written in python(jupyter notebook)
+
+## 5. Guessing game challenge
+written in python(jupyter notebook)
