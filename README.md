@@ -29,3 +29,12 @@
 ## 6. Replace value of chosen posititon game
 * written in python(jupyter notebook)
 * to create a small game where a user can choose a "position" in an existing list and replace it with a value of their choice.
+
+## 7. Tic-Tac Toe Game
+* written in python(jupyter notebook)
+* 1. We need to print a board.
+* 2. Take in player input.
+* 3. Place their input on the board.
+* 4. Check if the game is won,tied, lost, or ongoing.
+* 5. Repeat c and d until the game has been won or tied.
+* 6. Ask if players want to play again.
