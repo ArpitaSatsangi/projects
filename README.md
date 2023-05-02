@@ -57,3 +57,6 @@ the game is set to draw.
 * 6. Ask if players want to play again.
 
 
+## 8. Card War Game
+* written in python(jupyter notebook)
+* Two persons play against each other. If two cards of the opponents are equal they compare the next pair of the cards. The winner of the each round collect all the cards that have been played. 
